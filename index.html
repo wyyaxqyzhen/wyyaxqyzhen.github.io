@@ -274,7 +274,7 @@ typedJSFn.run(subtitleType)</script></div><div class="aplayer no-destroy" data-i
   document.addEventListener('pjax:error', e => {
     if (e.request.status === 404) {
       const usePjax = true
-      false 
+      true 
         ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
         : window.location.href = e.request.responseURL
     }
